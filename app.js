@@ -45,7 +45,7 @@ io.on('connection', function(socket){
   });
 });
 
-//Listen at localhost:3000
-server.listen(3000, function(){
+//Listen at process.env.PORT
+server.listen(process.env.PORT, function(){
   console.log('listening on *:3000');
 });
